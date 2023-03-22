@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>연습</title>
+	</head>
+	<body>
+		<th:block th:if="${session.member == null}">
+			
+		</th:block>
+	</body>
+</html>

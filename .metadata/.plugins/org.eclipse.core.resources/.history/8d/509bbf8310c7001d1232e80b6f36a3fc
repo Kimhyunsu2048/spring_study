@@ -1,0 +1,13 @@
+package org.koreait.restcontrollers;
+
+import org.koreait.controllers.users.MemberJoin;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class ApiMemberJoinController {
+	
+	public void join(MemberJoin memberJoin) {
+		
+	}
+
+}

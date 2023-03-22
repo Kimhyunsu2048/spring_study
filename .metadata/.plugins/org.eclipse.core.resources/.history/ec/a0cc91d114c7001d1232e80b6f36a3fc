@@ -1,0 +1,7 @@
+package org.koreait.restcontrollers;
+
+public class JSONResult<T> {
+	private boolean success; 
+	private String message; // 실패시 오류 메세지
+	T data; // 성공시 데이터
+}

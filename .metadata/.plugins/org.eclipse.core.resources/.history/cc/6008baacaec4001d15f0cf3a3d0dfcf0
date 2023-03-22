@@ -1,0 +1,32 @@
+package org.koreait.controllers.users;
+
+import javax.validation.Valid;
+
+import org.koreait.models.member.UserJoinFailException;
+import org.springframework.stereotype.Controller;
+import org.springframework.validation.Errors;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class UsersController {
+	@GetMapping("/users")
+	public String users(@Valid Users users, Errors errors) {
+		
+		System.out.println(users);
+		return "user/users";
+	}
+	
+	@GetMapping("/users/error")
+	public String errorExam() {
+		boolean isError = true;
+		if (isError) {
+			throw new UserJoinFailException("예외 테스트!");
+		}
+		return "user/mypage";
+	}
+	
+	public String errorHandler() {
+		
+		return "errors/error";
+	}
+}

@@ -1,0 +1,13 @@
+package org.koreait.controllers.users;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class UserLogoutController {
+	
+	@RequestMapping("/user/logout")
+	public String logout(HttpSession session) {
+		
+	}
+}

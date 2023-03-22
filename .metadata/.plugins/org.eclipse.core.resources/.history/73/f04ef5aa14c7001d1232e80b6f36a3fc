@@ -1,0 +1,6 @@
+package org.koreait.restcontrollers;
+
+public class JSONResult {
+	private boolean success;
+
+}

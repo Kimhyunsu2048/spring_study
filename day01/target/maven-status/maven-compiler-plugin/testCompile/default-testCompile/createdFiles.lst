@@ -1,0 +1,4 @@
+org\koreait\MemberLoginTest.class
+org\koreait\member\HttpSession.class
+org\koreait\AppTest.class
+org\koreait\member\MemberLoginService.class

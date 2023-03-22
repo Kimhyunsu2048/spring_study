@@ -1,0 +1,9 @@
+package org.koreait.controllers.users;
+
+import java.time.LocalDate;
+
+public class Users {
+	private LocalDate sdate;
+	private LocalDate edate;
+
+}

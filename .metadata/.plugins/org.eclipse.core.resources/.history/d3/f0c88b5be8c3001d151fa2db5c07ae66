@@ -1,0 +1,35 @@
+<%@ page contentType="text/html; charset=utf-8" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<c:url var="action" value="/user/login" />
+<form:form method="post" action="${action}" modelAttribute="memberJoin">
+	<form:errors element="div" />
+	<dl>
+		<dt>
+			<spring:message code="user.userId" />
+		</dt>
+		<dt>
+			<form:input path="userId" />
+			<form:errors path="userId" element="div" />
+		</dt>
+	</dl>
+	<dl>
+		<dt>
+			<spring:message code="user.userPw" />
+		</dt>
+		<dt>
+			<form:input path="userPw" />
+			<form:errors path="userPw" element="div" />
+		</dt>
+	</dl>
+	<div>
+		<spring:message var="savedId" code="user.savedId" />
+		<form:checkbox path="saveId" value="true" label="${savedId}" />
+		
+	</div>
+	<button type="submit">
+		<spring:message code="user.login" />
+	</button>
+
+</form:form>

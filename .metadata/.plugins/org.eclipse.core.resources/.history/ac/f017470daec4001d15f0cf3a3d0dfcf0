@@ -1,0 +1,17 @@
+package org.koreait.controllers.users;
+
+import javax.validation.Valid;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.validation.Errors;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class UsersController {
+	@GetMapping("/users")
+	public String users(@Valid Users users, Errors errors) {
+		
+		System.out.println(users);
+		return "user/users";
+	}
+}

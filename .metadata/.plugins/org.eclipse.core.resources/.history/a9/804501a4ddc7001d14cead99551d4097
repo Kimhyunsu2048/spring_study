@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>연습!</title>
+	</head>
+	<body>
+		<dl>
+			<dt th:text="#{user.userId"></dt>
+			<dd th:text="${member.userId}"></dd>
+		</dl>
+		<dl>
+			<dt th:text="#{user.userNm"></dt>
+			<dd th:text="${member.userNm}"></dd>
+		</dl>
+		<dl>
+			<dt th:text="#{user.userId"></dt>
+			<dd th:text="${member.userId}"></dd>
+		</dl>
+	
+	</body>
+</html>
